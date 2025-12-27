@@ -35,15 +35,25 @@ pip install -r requirements.txt
 ```
 3. Create a Discord application
 > __Go to:__ https://discord.com/developers/applications
+
 > Create a new application: __The name should be what you want the header of your RPC say, for example:__ "Currently listening to"
+
 > __Go to:__ assets/rhythmboxicon.png
+
 > Copy rhythmboxicon.png
+
 > __Go to:__ Discord Developer Portal GUI -> Rich Presence tab -> Rich Presence Assets -> "Add Image(s)"
+
 > Upload rhythmboxicon.png: __The name should be: "rhythmbox", otherwise the icon will not work!__
+
 > __Go to:__ Discord Developer Portal GUI -> Oauth2 tab
+
 > Copy "Client ID" value
+
 > __Go to:__ rhythmbox_drpc.py
+
 > Find: "__CLIENT_ID__" value (line 5)
+
 > Replace "yourclientid" with your Client ID from your Discord Application
 4. Run
 > For the script to run properly, it should be run under the Python VENV where `pypresence` is installed.
