@@ -48,6 +48,18 @@ pip install -r requirements.txt
 4. Run
 - For the script to run properly, it should be run under the Python VENV where `pypresence` is installed.
 
+__Optionally, you can make this script run at the startup of Rhythmbox.__
+1. Find and edit the start file for Rhythmbox  (other/older distros might have a different path)
+```bash
+cp /usr/share/applications/org.gnome.Rhythmbox3.desktop ~/.local/share/applications/
+nano ~/.local/share/applications/org.gnome.Rhythmbox3.desktop
+```
+2. Find the "Exec=" line and edit it. Remember, you must use absolute paths.
+```bash
+Exec=bash -c 'source /path/to/venv/bin/activate && python /path/to/script.py & exec rhythmbox %U'
+```
+3. Save and exit
+
 ### Important notes
 
 1. Discord does __not__ support dynamic album covers
