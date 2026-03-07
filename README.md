@@ -1,3 +1,5 @@
+## <span style="color:red"> *THIS PROJECT WILL NOT BE MAINTAINED ANYMORE.* </span>
+
 # Rhythmbox DRPC
 
 A simple Discord Rich Presence script for **Rhythmbox** on Linux systems. Written in Python.
